@@ -41,7 +41,12 @@ In Module 11, we learned more about Docker containers. We learned how to run a D
     - Install WSL in command prompt
 2. Once in Ubuntu shell, use the command
     `sudo ssh -i ds5111_docker.pem ubuntu@3.94.211.158` where `ds5111_docker.pem` is the `pem` key created for EC2 instance and the ip address `3.94.211.158` is the public ip for the EC2 instance.
-   
+
+### Connect the EC2 instance with GIT repository:
+1. Need to create a `SSH` key in EC2. The following command will create a public and private keys. Make sure to run the command in `.ssh/` folder. Also make sure to use `id_rsa` as the name of the ssh key file in subsequence questions.
+        -  `ssh-keygen -t rsa -b 4096 -C "e-mail address"`
+2. Now open `id_rsa.pub` that was created in step 1 using `vim id_rsa.pub` and copy the content. This content will be the key that is going to enter in Git hub.
+3. In the Github, got to `Settings` 
 
 Overall, I really enjoyed the class, learned so many different concepts and gained lot more software skills. I think I need to do more examples/projects/labs to practice some of the concepts especially DBT-Snowflake related database work and Docker related work.
 
