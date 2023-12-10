@@ -39,7 +39,7 @@ In Module 11, we learned more about Docker containers. We learned how to run a D
 ### Connect to EC2 instance using Windows command prompt:
 1. First need to get the Ubuntu subsystem running in Windows
     - Install WSL in command prompt
-2. Once in Ubuntu shell, use `/mnt/c/Users/peuma/Downloads` to be in `Downloads` folder as once you create the EC2 `pem` key, it usually download into `Downloads` folder. `c/Users/peuma/Downloads` is the link to my `Downloads` folder.
+2. Once in Ubuntu shell, use `/mnt/c/Users/peuma/Downloads` to be in `Downloads` folder as once you create the EC2 `pem` key, it usually downloads into `Downloads` folder. `c/Users/peuma/Downloads` is the link to my `Downloads` folder.
 3.  Now use the command
     `sudo ssh -i ds5111_docker.pem ubuntu@3.94.211.158` where `ds5111_docker.pem` is the `pem` key created for EC2 instance (that is in `Downloads` folder) and the ip address `3.94.211.158` is the public ip for the EC2 instance.
 
