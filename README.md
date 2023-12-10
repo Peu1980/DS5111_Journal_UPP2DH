@@ -43,10 +43,12 @@ In Module 11, we learned more about Docker containers. We learned how to run a D
     `sudo ssh -i ds5111_docker.pem ubuntu@3.94.211.158` where `ds5111_docker.pem` is the `pem` key created for EC2 instance and the ip address `3.94.211.158` is the public ip for the EC2 instance.
 
 ### Connect the EC2 instance with GIT repository:
-1. Need to create a `SSH` key in EC2. The following command will create a public and private keys. Make sure to run the command in `.ssh/` folder. Also make sure to use `id_rsa` as the name of the ssh key file in subsequence questions.
+1. Need to create a `SSH` key in EC2. The following command will create a public and private keys. Make sure to run the command in `.ssh/` folder. 
         -  `ssh-keygen -t rsa -b 4096 -C "e-mail address"`
-2. Now open `id_rsa.pub` that was created in step 1 using `vim id_rsa.pub` and copy the content. This content will be the key that is going to enter in Git hub.
-3. In the Github, got to `Settings` 
+2. It will prompt you to enter a name for the key and a password. Just press enter for both questions so `id_rsa` will be the name of the ssh key file and no password.
+3. Now open `id_rsa.pub` that was created in step 1 using `vim id_rsa.pub` and copy the content. This content will be the key that is going to enter in Git hub.
+4. In the Github, got to `Settings` and in `Settings` click on `SSH and GPG keys`. This will open a page that allows to enter the ssh key. Click on `New SSH key` button and enter the copied key in step 2.
+5. Now we can clone the git repository by using `git clone ssh-link-to-repository`. Here you can get `ssh-link-to-repository` part in the command by clicking the down arrow on the button `<> Code` inside the repository. 
 
 Overall, I really enjoyed the class, learned so many different concepts and gained lot more software skills. I think I need to do more examples/projects/labs to practice some of the concepts especially DBT-Snowflake related database work and Docker related work.
 
