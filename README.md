@@ -35,6 +35,14 @@ In Module 12, we learned more about connecting dbt with Snowflake. Professor wal
 ## Module 11: Overview of Snowflake and Docker lab
 In Module 11, we learned more about Docker containers. We learned how to run a Docker in t2.large EC2 environment. Professor walk us through an example that demostrate how to configure Docker and run Docker commands using `makefile`. The lab was interesting, I had a hard time generating the image by running `make run` where it execute `docker run knn_iris`. When I go into the bash session inside the container, I see the printed outputs from `knn_iris.py` script, however I don't see the image `.png` if it creates. If I run `python knn_iris` inside the bash session in the container, it will run the `knn_iris.py` and create the `.png` file. This was strange and not sure whats hapening.  
 
+## Some important codes to connect with EC2 and GIT repositories
+### Connect to EC2 instance using Windows command prompt:
+1. First need to get the Ubuntu subsystem running in Windows
+    - Install WSL in command prompt
+2. Once in Ubuntu shell, use the command
+    `sudo ssh -i ds5111_docker.pem ubuntu@3.94.211.158` where `ds5111_docker.pem` is the `pem` key created for EC2 instance and the ip address `3.94.211.158` is the public ip for the EC2 instance.
+   
+
 Overall, I really enjoyed the class, learned so many different concepts and gained lot more software skills. I think I need to do more examples/projects/labs to practice some of the concepts especially DBT-Snowflake related database work and Docker related work.
 
 
